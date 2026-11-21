@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "audit_1795240483253",
+    "administratorId": "citizen_1795016001335_x3edd",
+    "adminName": "Harsha Subhash",
+    "adminEmail": "harshasubhash123@gmail.com",
+    "action": "STATUS_UPDATE",
+    "complaintId": "complaint_1795239746125_ayle",
+    "changes": {
+      "previousStatus": "Forwarded",
+      "newStatus": "Action Taken",
+      "remarks": ""
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-21T05:54:43.253Z"
+  },
+  {
+    "_id": "audit_1795239914414",
+    "administratorId": "admin_harsha_01",
+    "adminName": "Administrator Harsha",
+    "adminEmail": "harsha@policeportal.gov.in",
+    "action": "STATUS_UPDATE",
+    "complaintId": "complaint_1795239746125_ayle",
+    "changes": {
+      "previousStatus": "Submitted",
+      "newStatus": "Forwarded",
+      "remarks": ""
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-21T05:45:14.414Z"
+  },
+  {
+    "_id": "audit_1795239905658",
+    "administratorId": "admin_harsha_01",
+    "adminName": "Administrator Harsha",
+    "adminEmail": "harsha@policeportal.gov.in",
+    "action": "STATUS_UPDATE",
+    "complaintId": "complaint_1795239746125_ayle",
+    "changes": {
+      "previousStatus": "Submitted",
+      "newStatus": "Submitted",
+      "remarks": "crime"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-21T05:45:05.658Z"
+  },
+  {
+    "_id": "audit_1795239857223",
+    "administratorId": "admin_harsha_01",
+    "adminName": "Administrator Harsha",
+    "adminEmail": "harsha@policeportal.gov.in",
+    "action": "ADMIN_LOGIN",
+    "changes": {
+      "loginTime": "2026-11-21T05:44:17.223Z"
+    },
+    "ipAddress": "::1",
+    "createdAt": "2026-11-21T05:44:17.223Z"
+  }
+]

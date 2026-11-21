@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "admin_harsha_01",
+    "id": "admin_harsha_01",
+    "fullName": "Administrator Harsha",
+    "email": "harsha@policeportal.gov.in",
+    "phone": "+91 98765 43210",
+    "passwordHash": "$2a$10$QOvOH9BVbKW3Yc1.sV4tQu1vYVwcJ8O9Q/WQqOF49HaJXmYhREjDu",
+    "address": "Central Police Command, Police Headquarters",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pinCode": "560001",
+    "role": "admin",
+    "mustChangePassword": true,
+    "createdAt": "2026-11-18T14:49:41.188Z",
+    "updatedAt": "2026-11-18T14:49:41.188Z"
+  },
+  {
+    "_id": "citizen_demo_01",
+    "id": "citizen_demo_01",
+    "fullName": "Rahul Sharma",
+    "email": "citizen@example.com",
+    "phone": "+91 91234 56789",
+    "passwordHash": "$2a$10$QOvOH9BVbKW3Yc1.sV4tQut5S8V5H9eAYC6Em8thTtxCq9aqSnXWe",
+    "address": "Flat 402, Green Glen Layout, Bellandur",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pinCode": "560103",
+    "role": "citizen",
+    "mustChangePassword": false,
+    "createdAt": "2026-11-18T14:49:41.294Z",
+    "updatedAt": "2026-11-18T14:49:41.294Z"
+  },
+  {
+    "_id": "citizen_1795016001335_x3edd",
+    "id": "citizen_1795016001335_x3edd",
+    "fullName": "Harsha Subhash",
+    "email": "harshasubhash123@gmail.com",
+    "phone": "9380268436",
+    "passwordHash": "$2a$10$AUSSry7LuUwzdEZ/f8Q3sexXjDruAWma4OMptUsj1u2s8QZP.UUji",
+    "address": "karnataka",
+    "city": "bengaluru",
+    "state": "Karnataka",
+    "pinCode": "560002",
+    "role": "admin",
+    "mustChangePassword": false,
+    "createdAt": "2026-11-18T15:33:21.335Z",
+    "updatedAt": "2026-11-18T15:33:21.335Z"
+  }
+]

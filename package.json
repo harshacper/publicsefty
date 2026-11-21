@@ -1,0 +1,23 @@
+{
+  "name": "smart-police-complaint-system",
+  "version": "1.0.0",
+  "description": "Smart Police Complaint Registration and Tracking Management System",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "cd server && npm run seed"
+  },
+  "keywords": [
+    "police",
+    "complaint",
+    "tracking",
+    "management",
+    "civic-tech"
+  ],
+  "author": "Harshavardhana J M",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.7"
+  }
+}
