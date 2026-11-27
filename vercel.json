@@ -23,7 +23,12 @@
       "dest": "server/src/server.js"
     },
     {
-      "handle": "filesystem"
+      "src": "/assets/(.*)",
+      "dest": "/client/assets/$1"
+    },
+    {
+      "src": "/(.*\\.(js|css|png|jpg|jpeg|svg|ico|json|woff|woff2|ttf|map))",
+      "dest": "/client/$1"
     },
     {
       "src": "/(.*)",
