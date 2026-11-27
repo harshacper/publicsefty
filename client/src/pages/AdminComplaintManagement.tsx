@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
 import {
   getAdminComplaintsList,
   updateComplaintStatusApi,
@@ -61,6 +62,7 @@ const STATUSES: (ComplaintStatus | 'All')[] = [
 ];
 
 export const AdminComplaintManagement: React.FC = () => {
+  const { user } = useAuth();
   const [searchParams] = useSearchParams();
   const initialSearch = searchParams.get('search') || '';
 

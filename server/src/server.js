@@ -101,17 +101,21 @@ const startServer = async () => {
     // Initialize in-memory seed store (ensures admin harsha/harsha@123 and stations are ready)
     await memoryStore.init();
 
-    app.listen(PORT, () => {
-      console.log(`=======================================================`);
-      console.log(`🛡️  SMART POLICE COMPLAINT MANAGEMENT SYSTEM BACKEND`);
-      console.log(`🚀 Server running on: http://localhost:${PORT}`);
-      console.log(`🌐 Connected Database: ${isConnectedToMongo ? 'MongoDB Atlas / Local' : 'Active Memory Store'}`);
-      console.log(`🔑 Admin Initial User: ${process.env.INITIAL_ADMIN_USERNAME || 'harsha'}`);
-      console.log(`=======================================================`);
-    });
+    if (!process.env.VERCEL) {
+      app.listen(PORT, () => {
+        console.log(`=======================================================`);
+        console.log(`🛡️  SMART POLICE COMPLAINT MANAGEMENT SYSTEM BACKEND`);
+        console.log(`🚀 Server running on: http://localhost:${PORT}`);
+        console.log(`🌐 Connected Database: ${isConnectedToMongo ? 'MongoDB Atlas / Local' : 'Active Memory Store'}`);
+        console.log(`🔑 Admin Initial User: ${process.env.INITIAL_ADMIN_USERNAME || 'harsha'}`);
+        console.log(`=======================================================`);
+      });
+    }
   } catch (err) {
     console.error('Failed to start server:', err);
-    process.exit(1);
+    if (!process.env.VERCEL) {
+      process.exit(1);
+    }
   }
 };
 
